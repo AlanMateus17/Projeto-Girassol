@@ -1,0 +1,205 @@
+form-container {
+    display: flex; /* Usado para alinhar os itens dentro do contêiner */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    padding: 10px; /* Espaçamento interno do contêiner */
+    background-color: #f8f8f8; /* Cor de fundo do contêiner */
+    border-radius: 5px; /* Bordas arredondadas para o contêiner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para o contêiner */
+    margin: 20px auto; /* Espaçamento externo superior/inferior e centraliza horizontalmente */
+    max-width: 600px; /* Largura máxima do contêiner */
+    width: 100%; /* Largura total do contêiner */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    font-size: 1em; /* Tamanho da fonte padrão */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    color: #333; /* Cor do texto padrão */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    margin-bottom: 20px; /* Espaçamento abaixo do contêiner */
+    padding: 20px; /* Espaçamento interno do contêiner */
+    border: 1px solid #ccc; /* Borda cinza clara para o contêiner */
+    background-color: #f9f9f9; /* Cor de fundo do contêiner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para o contêiner */
+    border-radius: 5px; /* Bordas arredondadas para o contêiner */
+    margin: 20px auto; /* Espaçamento externo superior/inferior e centraliza horizontalmente */
+    max-width: 600px; /* Largura máxima do contêiner */
+    width: 100%; /* Largura total do contêiner */
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto padrão */
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container textarea {
+    width: 100%; /* Largura total do campo de entrada */
+    padding: 10px; /* Espaçamento interno dos campos de entrada */
+    margin-bottom: 10px; /* Espaçamento abaixo dos campos de entrada */
+    border-radius: 5px; /* Bordas arredondadas para os campos de entrada */
+    border: 1px solid #ccc; /* Borda cinza clara para os campos de entrada */
+    font-size: 1em; /* Tamanho da fonte padrão */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+}
+
+footer {
+    background-color: #f8f8f8; /* Cor de fundo do footer */
+    color: #333; /* Cor do texto padrão */
+    padding: 10px 10px; /* Espaçamento interno superior/inferior e laterais */
+    font-size: 0.7em; /* Tamanho da fonte padrão */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cria colunas responsivas */
+    gap: 10px; /* Espaçamento entre as colunas */
+    margin-bottom: 1px; /* Espaço abaixo das colunas antes do copyright e social */
+  }
+  
+  .footer-grid > div { /* Aplica estilos a todas as divs diretas dentro de .footer-grid */
+    margin-bottom: 3%; /* Espaçamento abaixo de cada coluna */
+  }
+  
+  .footer-grid h4 {
+    color: #007bff; /* Cor dos títulos das colunas */
+    margin-top: 0; /* Remove a margem superior padrão dos h4 */
+    margin-bottom: 1px;/* Espaçamento abaixo do título */
+    border-bottom: 2px solid #ccc; /* Adiciona uma linha abaixo do título */
+    padding-bottom: 5px;
+  }
+  
+  .footer-grid p {
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  
+  .footer-grid a {
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .footer-grid a:hover {
+    text-decoration: underline;
+    color: #007bff;
+  }
+  
+  /* Estilos específicos para a coluna de links úteis */
+  .coluna-3 a {
+    display: block; /* Faz com que cada link ocupe uma linha */
+    margin-bottom: 0; /* Espaçamento entre os links */
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+
+  }
+  
+  /* Estilos para a coluna de links rápidos */
+  .coluna-4 a {
+    display: block; /* Faz com que cada link ocupe uma linha */
+    margin-bottom: 5px; /* Espaçamento entre os links */
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+
+  }
+  
+  .social-links {
+    text-align: center; /* Centraliza os ícones sociais */
+    margin-top: 1%; /* Espaçamento acima dos ícones sociais */
+    margin-bottom: 1%; /* Espaçamento abaixo dos ícones sociais */
+    font-size: 1.5em; /* Tamanho da fonte dos ícones sociais */
+    color: #333; /* Cor padrão dos ícones sociais */
+    display: flex; /* Usado para alinhar os ícones sociais em linha */
+    margin-bottom: 1px; /* Espaçamento abaixo dos ícones sociais */
+  }
+  
+  .social-links a { /* Aplica estilos a todos os links dentro de .social-links */
+    color: #777; /* Cor padrão dos ícones sociais */
+    font-size: 1.5em; /* Tamanho da fonte dos ícones sociais */
+    margin: 0 30px; /* Espaçamento lateral entre os ícones sociais */
+    text-decoration: none;/* Remove o sublinhado dos links */
+  }
+  
+  .social-links a:hover {/* Aplica estilos ao passar o mouse sobre os links sociais */
+    color: #007bff; /* Cor ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+  }
+  
+  .copyright {/* Estilos para o texto de copyright */
+    text-align: center;/* Centraliza o texto de copyright */
+    font-size: 0.8em;/* Tamanho da fonte do texto de copyright */
+    color: #777;/* Cor do texto de copyright */
+    margin-top: 10px;/* Espaçamento acima do texto de copyright */
+    margin-bottom: 10px;/* Espaçamento abaixo do texto de copyright */
+    padding: 10px;/* Espaçamento interno do texto de copyright */
+    border-top: 1px solid #ccc;/* Linha acima do texto de copyright */
+    background-color: #f8f8f8;/* Cor de fundo do texto de copyright */
+    position: relative;/* Posição relativa para o texto de copyright */
+    bottom: 0;/* Alinha o texto de copyright na parte inferior */
+    left: 0;/* Alinha o texto de copyright à esquerda */
+  }
+  footer {
+    background-color: #D3D3D3; /* Fundo Cinza Claro */
+    color: #333333; /* Texto Principal Cinza Médio */
+    padding: 30px 20px;
+  }
+  
+  .footer-grid h4 {
+    color: #558B2F; /* Títulos Verde Folha */
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #CCCCCC; /* Borda Cinza Claro */
+    padding-bottom: 5px;
+  }
+  
+  .footer-grid a {
+    color: #333333; /* Links Cinza Médio */
+    text-decoration: none;
+  }
+  
+  .footer-grid a:hover {
+    text-decoration: underline;
+    color: #FFDA63; /* Hover Amarelo Girassol */
+  }
+  
+  .social-links a {
+    color: #558B2F; /* Ícones Sociais Verde Folha */
+    font-size: 1.5em;/* Tamanho dos Ícones */
+    margin: 0 10px;/* Espaçamento Lateral */
+    text-decoration: none;/* Remove Sublinhado */
+    transition: color 0.3s, transform 0.3s; /* Transição suave para cor e transformação */
+
+  }
+  
+  .social-links a:hover {
+    color: #CC7722; /* Hover Laranja Terra */
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777777; /* Copyright Cinza Mais Claro */
+    margin-top: 10px;/* Espaçamento Acima */
+    margin-bottom: 10px;/* Espaçamento Abaixo */
+    padding: 10px;/* Espaçamento Interno */
+    border-top: 1px solid #CCCCCC; /* Borda Superior Cinza Claro */
+    background-color: #D3D3D3; /* Fundo Cinza Claro */
+  }
+  .footer-grid img {
+    line-height: 1.6;
+    margin-bottom: 8px;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para a imagem */
+    width: 10%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    display: block; /* Faz com que a imagem seja exibida como um bloco */
+    padding: 10px; /* Espaçamento interno da imagem */
+    border-radius: 5px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para a imagem */
+
+  }

@@ -1,0 +1,10 @@
+/* Estilos para o elemento body (o corpo da página) */
+body {
+    font-family: sans-serif; /* Define a fonte do texto para uma fonte sem serifa (limpa e moderna) */
+    margin: 0; /* Remove as margens padrão do body, garantindo que ele ocupe toda a largura da janela */
+    background-color: #f4f4f4; /* Cor de fundo da Página - Define uma cor de fundo cinza claro para a página */
+    display: flex; /* Ativa o modelo de layout flexível para os elementos filhos */
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente ao longo do eixo principal (eixo X) */
+    align-items: center; /* Centraliza os elementos filhos verticalmente ao longo do eixo transversal (eixo Y) */
+    min-height: 100vh; /* Garante que a altura mínima do body seja 100% da altura da viewport (janela do navegador), o que é útil para centralizar verticalmente em páginas curtas */
+  }

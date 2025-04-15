@@ -1,0 +1,82 @@
+/* Estilos para o elemento body (o corpo da página) */
+body {
+    font-family: sans-serif; /* Define a fonte do texto para uma fonte sem serifa (limpa e moderna) */
+    margin: 0; /* Remove as margens padrão do body, garantindo que ele ocupe toda a largura da janela */
+    background-color: #f4f4f4; /* Cor de fundo da Página - Define uma cor de fundo cinza claro para a página */
+    display: flex; /* Ativa o modelo de layout flexível para os elementos filhos */
+    justify-content: center; /* Centraliza os elementos filhos horizontalmente ao longo do eixo principal (eixo X) */
+    align-items: center; /* Centraliza os elementos filhos verticalmente ao longo do eixo transversal (eixo Y) */
+    min-height: 100vh; /* Garante que a altura mínima do body seja 100% da altura da viewport (janela do navegador), o que é útil para centralizar verticalmente em páginas curtas */
+  }
+  
+  /* Estilos para o contêiner do formulário */
+  .form-wrapper {
+    background-color: #fff; /* Cor de fundo do formulário - Define um fundo branco para o formulário */
+    padding: 30px; /* Adiciona um espaçamento interno de 30 pixels em todos os lados do formulário */
+    border-radius: 8px; /* Arredonda os cantos do formulário em 8 pixels */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Efeito sombra para flutuar - Cria uma sombra sutil ao redor do formulário, dando a impressão de que ele está "flutuando" sobre o fundo */
+    width: 300px; /* Largura desejada do formulário - Define uma largura fixa de 300 pixels para o formulário */
+    display: grid; /* Ativa o modelo de layout de grade para os elementos filhos dentro do formulário */
+    grid-template-columns: auto auto; /* Define duas colunas na grade com largura automática (baseada no conteúdo) */
+    gap: 10px; /* Espaçamento entre as células da grade - Define um espaçamento de 10 pixels entre as linhas e colunas da grade */
+  }
+  
+  /* Estilos para o título h4 dentro do formulário */
+  .form-wrapper h4 {
+    color: #f4a261; /* Define a cor do texto do título para um tom de laranja */
+    font-size: 1.2rem; /* Tamanho da fonte do título - Define o tamanho da fonte como 1.2 vezes o tamanho da fonte padrão */
+    margin-bottom: 0px; /* Espaçamento abaixo do título - Remove qualquer margem inferior do título */
+    margin-left: 40px; /* Adiciona uma margem esquerda de 40 pixels ao título */
+  }
+  
+  /* Estilos para o parágrafo p dentro do formulário */
+  .form-wrapper p {
+    color: black; /* Define a cor do texto do parágrafo para preto */
+    font-size: 0.7rem; /* Tamanho da fonte do título - Define o tamanho da fonte como 0.7 vezes o tamanho da fonte padrão (menor que o padrão) */
+    margin-bottom: 30px; /* Espaçamento abaixo do título - Adiciona uma margem inferior de 30 pixels ao parágrafo */
+    margin-left: 80px; /* Adiciona uma margem esquerda de 80 pixels ao parágrafo */
+  }
+  
+  /* Estilos para os elementos div dentro do formulário (geralmente contendo um label e um input) */
+  .form-wrapper div {
+    margin-bottom: 15px; /* Adiciona uma margem inferior de 15 pixels a cada div, separando os campos do formulário */
+  }
+  
+  /* Estilos para as labels (rótulos) dos campos do formulário */
+  .form-wrapper label {
+    display: block; /* Faz com que a label ocupe toda a largura disponível e force o próximo elemento (o input) para uma nova linha */
+    margin-bottom: 5px; /* Adiciona uma pequena margem inferior de 5 pixels abaixo da label, separando-a visualmente do campo de entrada */
+    color: #555; /* Define a cor do texto da label para um cinza mais escuro */
+  }
+  
+  /* Estilos para os campos de entrada de texto, e-mail e senha */
+  .form-wrapper input[type="text"],
+  .form-wrapper input[type="email"],
+  .form-wrapper input[type="password"] {
+    width: 90%; /* Define a largura dos campos de entrada para 90% da largura do seu contêiner pai */
+    padding: 10px; /* Adiciona um espaçamento interno de 10 pixels em todos os lados dos campos de entrada */
+    border: 1px solid #ddd; /* Define uma borda de 1 pixel sólida com uma cor cinza clara */
+    border-radius: 4px; /* Arredonda os cantos dos campos de entrada em 4 pixels */
+    box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total do elemento, evitando layouts quebrados */
+    align-items: center;
+    
+    
+  }
+  
+  /* Estilos para o botão de envio do formulário */
+  .form-wrapper button[type="submit"] {
+    background-color: #007bff; /* Define a cor de fundo do botão para azul */
+    color: white; /* Define a cor do texto do botão para branco */
+    padding: 12px 20px; /* Adiciona um espaçamento interno de 12 pixels na parte superior e inferior e 20 pixels nas laterais do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 4px; /* Arredonda os cantos do botão em 4 pixels */
+    cursor: pointer; /* Altera o cursor do mouse para um ponteiro ao passar sobre o botão, indicando que ele é clicável */
+    width: 100%; /* Faz com que o botão ocupe toda a largura disponível do seu contêiner pai */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão para 16 pixels */
+    transition: backgroud-color 0.3s ease; /* Adiciona uma transição suave para a mudança da cor de fundo com uma duração de 0.3 segundos e uma função de easing "ease" */
+  }
+  
+  /* Estilos para o botão de envio quando o mouse passa sobre ele (efeito hover) */
+  .form-wrapper button[type="submit"]:hover {
+    background-color: #0056b3; /* Escurece a cor de fundo do botão ao passar o mouse, fornecendo um feedback visual */
+  }

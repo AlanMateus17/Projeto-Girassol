@@ -1,0 +1,363 @@
+body {
+    background-color: #FFF8DC; /* Define a cor de fundo da página como um amarelo pálido/creme. */
+    color: #4A3B31; /* Define a cor padrão do texto da página como um marrom escuro. */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes preferencial para o texto, buscando uma aparência moderna e legível. */
+    font-size: 16px; /* Define o tamanho padrão da fonte como 16 pixels. */
+    line-height: 1.7; /* Define a altura da linha para melhorar a legibilidade do texto. */
+    margin: 0; /* Remove as margens padrão do elemento body. */
+    padding: 0; /* Remove o preenchimento padrão do elemento body. */
+    -webkit-font-smoothing: antialiased; /* Aplica uma técnica de suavização de fontes para navegadores baseados no Webkit (Chrome, Safari). */
+    -moz-osx-font-smoothing: grayscale; /* Aplica uma técnica de suavização de fontes para o navegador Firefox em sistemas macOS. */
+  }
+  
+  h1, h3 {
+    color: #558B2F; /* Define a cor dos títulos (níveis 1 e 3) como um verde oliva, associado à natureza do girassol. */
+    font-weight: 600; /* Define a espessura da fonte dos títulos como semibold (mais forte que o normal). */
+    margin-bottom: 1em; /* Define uma margem inferior para os títulos, criando espaço abaixo deles. */
+  }
+  
+  h2 {
+    color: #B8860B; /* Define a cor dos títulos de nível 2 como um tom de dourado/mostarda. */
+    font-weight: 600; /* Define a espessura da fonte dos títulos como semibold (mais forte que o normal). */
+    margin-bottom: 1em; /* Define uma margem inferior para os títulos, criando espaço abaixo deles. */
+  }
+  
+  a {
+    color: #007bff; /* Define a cor padrão dos links como azul, proporcionando contraste com o fundo. */
+    text-decoration: none; /* Remove a decoração padrão de sublinhado dos links. */
+    transition: color 0.3s ease-in-out; /* Adiciona uma transição suave para a propriedade de cor quando o estado do link muda. */
+  }
+  
+  a:hover {
+    color: #FFDA63; /* Define a cor dos links quando o mouse passa por cima (hover) como amarelo girassol. */
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #fff; /* Define a cor de fundo do cabeçalho como branco. */
+    padding: 4em 3em; /* Define o preenchimento interno do cabeçalho (topo/baixo e esquerda/direita). */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho. */
+    margin-bottom: 0; /* Define uma margem inferior para o cabeçalho, criando espaço abaixo dele. */
+    border-bottom: 2px solid #f0f0f0; /* Adiciona uma borda inferior sutil ao cabeçalho. */
+  }
+  
+  .logo-container {
+    display: inline-block; /* Permite que o container da logo controle largura e altura enquanto se comporta como um elemento de texto. */
+  }
+  
+  .logo-container img {
+    max-height: 80px; /* Define a altura máxima da imagem dentro do container da logo. */
+    vertical-align: middle; /* Alinha verticalmente a imagem ao centro da linha. */
+  }
+  
+  .logo-container span {
+    font-size: 1.5em; /* Define o tamanho da fonte do texto (nome da clínica) como 1.5 vezes o tamanho padrão. */
+    font-weight: bold; /* Define a espessura da fonte do texto como negrito. */
+    color: #4A3B31; /* Define a cor do texto (nome da clínica) como marrom escuro. */
+    margin-left: 10px; /* Adiciona uma margem à esquerda do texto, separando-o da imagem. */
+    margin-top: 0;
+    vertical-align: middle; /* Alinha verticalmente o texto ao centro da linha. */
+  }
+  
+  .cabeçalho .container .d-flex {
+    display: flex; /* Utiliza o modelo de layout flexbox para organizar os itens internos. */
+    justify-content: center; /* Centraliza os itens flexíveis horizontalmente. */
+    margin-top: 2.5em; /* Define uma margem superior para o container dos links de navegação. */
+  }
+  
+  .d-flex a {
+    margin: 0 1.5em; /* Define margens esquerda e direita para os links de navegação, criando espaço entre eles. */
+    font-size: 1.1em; /* Define o tamanho da fonte dos links de navegação ligeiramente maior que o padrão. */
+    color: #555; /* Define a cor dos links de navegação como cinza médio. */
+  }
+  
+  .d-flex a:hover {
+    color: #FFDA63; /* Define a cor dos links de navegação quando o mouse passa por cima como amarelo girassol. */
+  }
+  
+  /* Seções de Conteúdo */
+  .sobre-empresa,
+  .Paula-Xavier,
+  .Josiane-Silva,
+  .Cléia-Maria,
+  .Rosângela-Teixeira,
+  .Sobre-Equipe {
+    max-width: 800px; /* Define a largura máxima das seções de conteúdo. */
+    margin: 3em auto; /* Define margens superior/inferior e centraliza horizontalmente as seções. */
+    padding: 2em; /* Define o preenchimento interno das seções. */
+    border: 1px solid #ddd; /* Adiciona uma borda cinza clara às seções. */
+    border-radius: 8px; /* Arredonda os cantos das bordas das seções. */
+    background-color: #f9f9f9; /* Define a cor de fundo das seções como um cinza claro suave. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Adiciona uma sombra sutil às seções para criar profundidade. */
+  }
+  
+  .sobre-empresa h2,
+  .Paula-Xavier h2,
+  .Josiane-Silva h2,
+  .Cléia-Maria h2,
+  .Rosângela-Teixeira h2,
+  .Sobre-Equipe h2 {
+    color: #558B2F; /* Define a cor dos títulos de nível 2 dentro das seções como verde oliva. */
+    border-bottom: 2px solid #FFDA63; /* Adiciona uma linha amarela abaixo dos títulos das seções como destaque. */
+    padding-bottom: 0.5em; /* Define um preenchimento inferior para os títulos das seções. */
+    margin-bottom: 1.5em; /* Define uma margem inferior para os títulos das seções. */
+  }
+  
+  /* Contêiner de Parágrafos (Grid) */
+  .conteiner {
+    display: grid; /* Utiliza o modelo de layout grid para organizar os itens internos. */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Cria colunas responsivas com um tamanho mínimo de 350px. */
+    gap: 2em; /* Define o espaçamento entre as células do grid. */
+    padding: 2em; /* Define o preenchimento interno do contêiner do grid. */
+    max-width: 1200px; /* Define a largura máxima do contêiner do grid. */
+    margin: 3em auto; /* Define margens superior/inferior e centraliza horizontalmente o contêiner do grid. */
+  }
+  
+  .paragraph-wrapper {
+    background-color: #fff; /* Define a cor de fundo dos blocos de parágrafo como branco. */
+    padding: 1.5em; /* Define o preenchimento interno dos blocos de parágrafo. */
+    border-radius: 8px; /* Arredonda os cantos das bordas dos blocos de parágrafo. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* Adiciona uma sombra sutil aos blocos de parágrafo para criar profundidade. */
+  }
+  
+  .paragraph-wrapper h3 {
+    color: #4A3B31; /* Define a cor dos títulos de nível 3 dentro dos blocos de parágrafo como marrom escuro. */
+    margin-top: 0; /* Remove a margem superior padrão dos títulos de nível 3. */
+    margin-bottom: 0.8em; /* Define uma margem inferior para os títulos de nível 3. */
+  }
+  
+  /* Contêiner de Formulário */
+  .form-container {
+    display: flex; /* Utiliza o modelo de layout flexbox para organizar os itens internos. */
+    flex-direction: column; /* Alinha os itens flexíveis em uma coluna vertical. */
+    align-items: center; /* Centraliza os itens flexíveis horizontalmente. */
+    padding: 3em; /* Define o preenchimento interno do contêiner do formulário. */
+    background-color: #f8f8f8; /* Define a cor de fundo do contêiner do formulário como um cinza claro. */
+    border-radius: 8px; /* Arredonda os cantos das bordas do contêiner do formulário. */
+    margin: 3em auto; /* Define margens superior/inferior e centraliza horizontalmente o contêiner do formulário. */
+    max-width: 600px; /* Define a largura máxima do contêiner do formulário. */
+    width: 100%; /* Garante que o contêiner do formulário ocupe toda a largura disponível dentro de sua largura máxima. */
+    border: 1px solid #ddd; /* Adiciona uma borda cinza clara ao contêiner do formulário. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Adiciona uma sombra sutil ao contêiner do formulário para criar profundidade. */
+  }
+  
+  .form-container h2 {
+    color: #558B2F; /* Define a cor do título de nível 2 dentro do formulário como verde oliva. */
+    margin-bottom: 1.5em; /* Define uma margem inferior para o título do formulário. */
+    border-bottom: 2px solid #FFDA63; /* Adiciona uma linha amarela abaixo do título do formulário como destaque. */
+    padding-bottom: 0.5em; /* Define um preenchimento inferior para o título do formulário. */
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container textarea {
+    width: calc(100% - 22px); /* Define a largura dos campos de entrada para ocupar toda a largura disponível, subtraindo a largura da borda e do preenchimento. */
+    padding: 1em; /* Define o preenchimento interno dos campos de entrada. */
+    margin-bottom: 1.5em; /* Define uma margem inferior para os campos de entrada. */
+    border-radius: 5px; /* Arredonda os cantos das bordas dos campos de entrada. */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara aos campos de entrada. */
+    font-size: 1em; /* Define o tamanho da fonte dentro dos campos de entrada. */
+  }
+  
+  .form-container button {
+    background-color: #FFDA63; /* Define a cor de fundo do botão primário como amarelo girassol. */
+    color: #4A3B31; /* Define a cor do texto do botão primário como marrom escuro. */
+    padding: 1em 2em; /* Define o preenchimento interno do botão primário. */
+    border: none; /* Remove a borda padrão do botão. */
+    border-radius: 8px; /* Arredonda os cantos das bordas do botão. */
+    cursor: pointer; /* Altera o cursor do mouse para indicar que o elemento é clicável. */
+    font-size: 1.1em; /* Define o tamanho da fonte do texto do botão ligeiramente maior que o padrão. */
+    transition: background-color 0.3s ease-in-out; /* Adiciona uma transição suave para a propriedade de cor de fundo quando o estado do botão muda. */
+  }
+  
+  .form-container button:hover {
+    background-color: #FFE699; /* Define a cor de fundo do botão quando o mouse passa por cima como um amarelo mais claro. */
+  }
+  
+  .perfil-destacado {
+    /* Estilos gerais para o container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .foto-perfil img {
+    /* Estilos para a foto de perfil */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #ddd;
+  }
+  
+  .info-principal h1 {
+    /* Estilos para o nome */
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .info-principal p {
+    /* Estilos para a atuação */
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .chamada-acao h2 {
+    /* Estilos para a chamada para ação */
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .botoes-contato-destaque {
+    /* Estilos para o container dos botões de contato destacados */
+    display: flex;
+    flex-direction: column; /* Alinha os botões verticalmente por padrão */
+    gap: 15px; /* Define o espaçamento entre os botões */
+    width: 100%; /* Faz o container ocupar toda a largura disponível */
+    max-width: 400px; /* Define uma largura máxima para o container dos botões */
+  }
+  
+  .conteiner-botoes {
+    display: flex; /* Utiliza flexbox para organizar os botões */
+    flex-direction: column; /* Alinha os botões verticalmente */
+    /* Outros estilos do container */
+  }
+  
+  .botao-link {
+    /* Outros estilos do botão link */
+    width: 200px; /* Define a largura desejada (ex: 200 pixels) */
+    min-width: 200px; /* Garante que não fiquem menores que a largura definida */
+    max-width: 200px; /* Garante que não fiquem maiores que a largura definida */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    /* Se os botões estiverem lado a lado, você pode usar flex-basis */
+    /* flex-basis: 200px; */
+  }
+  
+  .botao {
+    /* Estilos base para todos os botões */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box; /* Importante para que o padding nao aumente a largura total */
+  }
+  
+  .botao:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .botao img {
+    /* Estilos para os ícones dos botões */
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .botao span {
+    /* Estilos para o texto dos botões */
+    font-size: 1em;
+  }
+  
+  /* Estilos específicos para cada botão */
+  .botao-whatsapp { background-color: #25D366; }
+  .botao-instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); }
+  .botao-endereco { background-color: #007bff; } /* Cor de exemplo */
+  .botao-google-reviews { background-color: #db4437; } /* Cor de exemplo */
+  .botao-linktree { background-color: #39E09B; } /* Cor de exemplo */
+  .botao-linkedin { background: linear-gradient(45deg, #0077B5, #005582, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); 
+}
+
+  /* Media queries para responsividade (exemplo) */
+  @media (min-width: 768px) {
+    .botoes-contato-destaque {
+      flex-direction: row; /* Em telas maiores, alinha os botões horizontalmente */
+      justify-content: center; /* Centraliza os botões horizontalmente */
+    }
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #f8f8f8; /* Define a cor de fundo do rodapé como um cinza claro. */
+    color: #555; /* Define a cor do texto do rodapé como cinza médio. */
+    padding: 3em 2em; /* Define o preenchimento interno do rodapé. */
+    text-align: center; /* Centraliza o texto dentro do rodapé. */
+    border-top: 1px solid #eee; /* Adiciona uma borda superior sutil ao rodapé. */
+    margin-top: 4em; /* Define uma margem superior para o rodapé, criando espaço acima dele. */
+  }
+  
+  .footer-grid {
+    display: grid; /* Utiliza o modelo de layout grid para organizar os itens internos. */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Cria colunas responsivas com um tamanho mínimo de 250px. */
+    gap: 2em; /* Define o espaçamento entre as células do grid do rodapé. */
+    max-width: 1200px; /* Define a largura máxima do contêiner do grid do rodapé. */
+    margin: 0 auto 2em; /* Define margens superior/inferior e centraliza horizontalmente o contêiner do grid do rodapé. */
+  }
+  
+  .footer-grid h4 {
+    color: #558B2F; /* Define a cor dos títulos de nível 4 dentro do grid do rodapé como verde oliva. */
+    margin-top: 0; /* Remove a margem superior padrão dos títulos de nível 4. */
+    margin-bottom: 1em; /* Define uma margem inferior para os títulos de nível 4. */
+    border-bottom: 2px solid #FFDA63; /* Adiciona uma linha amarela abaixo dos títulos do rodapé como destaque. */
+    padding-bottom: 0.5em; /* Define um preenchimento inferior para os títulos do rodapé. */
+    text-align: left; /* Alinha o texto dos títulos do rodapé à esquerda. */
+  }
+  
+  .footer-grid p,
+  .footer-grid a {
+    color: #777; /* Define a cor do texto e dos links dentro do grid do rodapé como cinza mais claro. */
+    line-height: 1.6; /* Define a altura da linha para o texto dentro do grid do rodapé. */
+    text-decoration: none; /* Remove a decoração padrão de sublinhado dos links dentro do grid do rodapé. */
+  }
+  
+  .footer-grid a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado aos links dentro do grid do rodapé quando o mouse passa por cima. */
+    color: #FFDA63; /* Define a cor dos links dentro do grid do rodapé quando o mouse passa por cima como amarelo girassol. */
+  }
+  
+  .social-links {
+    text-align: center; /* Centraliza o texto dentro do contêiner de links sociais. */
+    margin-top: 2em; /* Define uma margem superior para o contêiner de links sociais. */
+    margin-bottom: 2em; /* Define uma margem inferior para o contêiner de links sociais. */
+    font-size: 1.8em; /* Define o tamanho da fonte dos ícones sociais. */
+  }
+  
+  .social-links a {
+    color: #558B2F; /* Define a cor dos links sociais como verde oliva. */
+    margin: 0 1em; /* Define margens esquerda e direita para os links sociais, criando espaço entre eles. */
+  }
+  
+  .social-links a:hover {
+    color: #CC7722; /* Define a cor dos links sociais quando o mouse passa por cima como um tom de laranja terra. */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho dos ícones sociais ao passar o mouse. */
+  }
+  
+  .copyright {
+    text-align: center; /* Centraliza o texto da seção de copyright. */
+    font-size: 0.9em; /* Define o tamanho da fonte do texto de copyright ligeiramente menor que o padrão. */
+    color: #999; /* Define a cor do texto de copyright como um cinza claro. */
+    margin-top: 2em; /* Define uma margem superior para a seção de copyright. */
+    padding-top: 1em; /* Define um preenchimento superior para a seção de copyright. */
+    border-top: 1px solid #eee; /* Adiciona uma borda superior sutil à seção de copyright. */
+  }
+  
+  .footer-grid img {
+    max-width: 100%; /* Garante que a largura da imagem não exceda a largura do contêiner pai. */
+    height: auto; /* Mantém a proporção original da altura da imagem. */
+    border-radius: 5px; /* Arredonda os cantos das bordas das imagens no rodapé. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil às imagens no rodapé para criar profundidade. */
+    display: block; /* Faz com que a imagem se comporte como um elemento de bloco, ocupando toda a largura disponível. */
+    margin: 1em auto; /* Centraliza horizontalmente a imagem e adiciona espaço ao redor. */
+  }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cadastroTela.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="form-wrapper">
+            <form class="cadastroForm">
+                <h4>Crie uma conta gratis</h4>
+                <input type="email" id="email" name="email" placeholder="E-Mail" required />
+                <span id="emailErro" class="error"></span><br><br>
+
+
+                <input type="password" id="senha" name="senha" placeholder="Senha" />
+                <span id="senhaErro" class="error"></span><br><br>
+
+                <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="ConfirmarSenha"
+                    required />
+                <span id="confirmarSenhaErro" class="error"></span><br><br>
+
+                <button type="submit" id="botaoEnviar">Enviar</button><br><br>
+                <button type="button" id="botaoVoltar" onclick="voltar()">Voltar</button>
+                <button type="reset" id="botaoLimpar">Limpar</button><br><br>
+
+
+
+                <span id="mensagemErro" class="error"></span>
+                <span id="mensagemSucesso" class="success"></span>
+                <span id="mensagemErro2" class="error"></span>
+                <span id="mensagemSucesso2" class="success"></span>
+
+                <a href="login.html" id="linkLogin">Faça login aqui.</a><br>
+        </div>
+    </div>
+    </form>
+
+
+</body>
+
+</html>
